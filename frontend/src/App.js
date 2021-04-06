@@ -1,11 +1,15 @@
-
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import HomeScreen from './screens/HomeScreen'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        hello
-      </header>
-    </div>
+    <Router>
+      <Header />
+
+      <Footer />
+    </Router>
   );
 }
 
